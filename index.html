@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Water Area Calculator</title>
+</head>
+<body>
+    <div id="main-content">
+        <div id="matrix-container"></div>
+        <div id="user-interactive">
+            <div id="speed-field">
+                <fieldset>
+                    <legend>Speed: </legend>
+                    
+                    <input type="radio" id="fast" name="speed">
+                    <label for="fast">Fast</label><br/>
+                
+                    <input type="radio" id="normal" name="speed" checked="checked">
+                    <label for="normal">Normal</label><br/>
+                
+                    <input type="radio" id="slow" name="speed">
+                    <label for="slow">Slow</label>
+                </fieldset>
+            </div>
+            <div id="board-buttons">
+                <button id="play-button">Play</button>
+                <button id="renew-button">Renew</button>
+            </div>
+            <div id="water-counter">
+                <i class="fas fa-tint fa-2x"></i>
+                <span id="counter">0</span>
+            </div>
+        </div>
+        <script type="module" src="./scripts/main.js"></script>
+    </div>
+</body>
+</html>

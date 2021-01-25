@@ -1,0 +1,161 @@
+/* Reset */
+*, *:focus, *:hover {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 15px;
+}
+
+/* containers */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#matrix-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Matrix */
+.matrix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+.matrix .row {
+  display: flex;
+  flex-direction: row;
+}
+.matrix .row .cell {
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.matrix .row .cell:hover {
+  border-color: #117ed6;
+}
+.matrix .row .blocked-cell {
+  cursor: auto;
+  background-color: rgb(173, 173, 173);
+}
+.matrix .row .blocked-cell:hover {
+  border-color: black;
+}
+.matrix .row .water {
+  background-color: blue;
+}
+.matrix .row .pointed {
+  border-color: #117ed6;
+}
+.matrix .row .black {
+  background-color: rgb(83, 83, 83);
+}
+.matrix .auxiliar-row {
+  display: flex;
+  flex-direction: row;
+}
+.matrix .auxiliar-row .row-icon {
+  margin-top: 7.5px;
+  left: 125px;
+  color: gray;
+  position: absolute;
+}
+.matrix .auxiliar-row .row-icon i {
+  color: blue;
+}
+.matrix .auxiliar-row .cell {
+  border-color: #b3b1b1;
+}
+.matrix .auxiliar-row .cell span {
+  position: absolute;
+}
+.matrix .auxiliar-row .cell i {
+  position: absolute;
+}
+
+#user-interactive {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#user-interactive #water-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+  background-color: blue;
+  border-radius: 5%;
+  color: white;
+}
+#user-interactive #water-counter i {
+  padding: 5px;
+}
+#user-interactive #water-counter span {
+  display: block;
+  font-size: 45px;
+  padding: 5px;
+}
+#user-interactive #board-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 20px;
+}
+#user-interactive #board-buttons button {
+  color: black;
+  width: 70px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 1px 0;
+  background-color: #afc5e9;
+  border-radius: 5%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#user-interactive #board-buttons button:hover {
+  background-color: #628bce;
+  color: white;
+}
+#user-interactive #board-buttons .selected {
+  background-color: #628bce;
+  color: black;
+  cursor: auto;
+}
+#user-interactive #board-buttons .selected:hover {
+  color: black;
+  background-color: #628bce;
+}
+#user-interactive #speed-field fieldset {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
